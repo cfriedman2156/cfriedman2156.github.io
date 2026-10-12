@@ -1,60 +1,421 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gameday Pulse — Privacy Policy</title>
-<meta name="description" content="Gameday Pulse privacy policy: fantasy-provider connections, local data, diagnostics, privacy requests, and planned services.">
-<style>
-:root{color-scheme:light dark;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7;color:#20282b;background:#fafcfb}body{margin:0}main{max-width:800px;margin:0 auto;padding:52px 24px 72px}h1{font-size:clamp(2rem,5vw,2.7rem);line-height:1.15;letter-spacing:-.035em;margin:0 0 14px}h2{font-size:1.3rem;line-height:1.35;margin:36px 0 10px}h3{font-size:1.06rem;margin:24px 0 8px}p{margin:0 0 16px}a{color:#08604b;text-underline-offset:3px;overflow-wrap:anywhere}a:focus-visible{outline:3px solid #428773;outline-offset:4px}.date{color:#5c6964}.note{padding:18px 20px;background:#eaf3ed;border-left:4px solid #23745a;border-radius:0 8px 8px 0}li{margin:8px 0}footer{border-top:1px solid #ccd8d1;margin-top:38px;padding-top:20px;color:#5c6964;font-size:.93rem}@media(prefers-color-scheme:dark){:root{color:#e7eee9;background:#111b18}a{color:#9cdec4}.date,footer{color:#afc0b6}.note{background:#1c3027;border-color:#8ad3b5}footer{border-color:#34473d}}@media print{main{padding:0;max-width:none}:root{color:#000;background:#fff}.note{background:none}a{color:inherit}}
-</style>
-</head>
-<body><main>
-<h1>Gameday Pulse Privacy Policy</h1>
-<p class="date">Last updated: October 8, 2026</p>
-<h2>About this policy</h2>
-<p>This policy describes how Gameday Pulse handles information. “We,” “us,” and “our” mean Chase Friedman, the developer of Gameday Pulse. For support or privacy requests, contact <a href="mailto:chase@sudokuhero.app">chase@sudokuhero.app</a>.</p>
-<p class="note"><strong>Current and planned services:</strong> Yahoo integration is not yet released. Google AdMob banner ads, Amplitude analytics, and Sentry crash reporting are planned for future updates and are not currently integrated. The future-service sections below do not describe collection already occurring through those services.</p>
-<h2>Fantasy leagues and provider connections</h2>
-<p>Gameday Pulse processes fantasy-league information such as league and team identifiers, team names, rosters, matchups, standings, player statistics, scores, and available projections. It uses this information to display your selected leagues, follow matchups, and generate scoring updates and animations. You do not need a separate Gameday Pulse account. The built-in sample league uses simulated data and can be explored without connecting a personal fantasy account.</p>
-<h3>ESPN</h3>
-<p>When you sign in through the app’s embedded browser, your password is entered on ESPN’s website. The app reads the ESPN session cookies needed to access private leagues, including SWID and espn_s2, and saves connection information using secure storage on native devices. Private ESPN score requests are made directly from the native app to ESPN. The embedded sign-in browser also maintains its own session storage. Public leagues can be accessed without a private-league sign-in.</p>
-<h3>Sleeper and public sports data</h3>
-<p>Sleeper connections use a league identifier, league link, or public username lookup. They do not require a Sleeper password. League and player information is requested from Sleeper’s public services. Public ESPN services also supply NFL game context and related information. Providers may receive technical request information, including your IP address, when the app or embedded browser connects to them. Their own privacy policies apply to information they collect.</p>
-<h3>Optional browser-preview helper</h3>
-<p>The optional computer helper for browser previews reads ESPN data on the computer running it and sends league information to paired viewers. Private ESPN session values are used by that helper rather than sent to viewers. This helper is separate from the native phone connection. Its form-entered sessions are held in memory and are cleared when the helper restarts; manually configured credentials are controlled by the person running the helper.</p>
-<h2>Information stored on your device</h2>
-<p>The app stores league selections, team and watch preferences, local scoring and notification history, read receipts, and replay-related state on your device. Native connection credentials use secure device storage. Browser previews use browser storage, with connection credentials held in session storage. The operating system may include some app data in backups according to your settings.</p>
-<h2>Diagnostics and support</h2>
-<p>The optional live-test log records technical timing and error information, scoring changes, player names, roster membership, and animation events. It is stored locally and can persist when you reopen the app. Recording this log does not automatically upload it. If you choose to share a log, the recipient receives the exported information. These logs are not described as anonymous.</p>
-<p>If you email us or send a diagnostic report, we receive your email address and the information you choose to provide. We use correspondence to respond, troubleshoot, and handle privacy requests. Email is processed by the services used to send and receive it. Please do not send passwords, provider session cookies, or connection tokens.</p>
-<h2>Planned Yahoo integration</h2>
-<p>Yahoo integration is not yet released. Its planned design uses Yahoo sign-in and a Cloudflare-hosted service to obtain read-only fantasy access, handle authorization tokens, and retrieve league information. Before introducing it, we will update this policy to describe the actual data processed, server storage and retention, disconnect behavior, and provider choices. No Yahoo functionality or current Yahoo collection is implied by this notice.</p>
-<h2>Planned advertising and privacy choices</h2>
-<p>We plan to introduce Google AdMob banner advertisements in a future update. If enabled, Google and advertising partners may process IP addresses indicating approximate location, device and app identifiers (including advertising identifiers when permitted), app and ad interactions, diagnostics and performance information, and consent choices for ad delivery, measurement, and fraud prevention.</p>
-<p>Personalized advertising would depend on applicable permissions and consent. On iOS and iPadOS, Apple’s App Tracking Transparency permission is separate from regional advertising choices presented through Google’s User Messaging Platform. Permission through one mechanism does not override choices through the other. Where required, those choices would be obtained before the relevant advertising processing begins.</p>
-<p>Declining tracking does not necessarily eliminate all advertising-related processing. Non-personalized or limited ads can still involve data collection and device storage for delivery, frequency limits, reporting, and fraud prevention. Depending on the configuration and choices, a future version may serve non-personalized or limited ads, or no ads. Advertising choices are not a general analytics or crash-reporting opt-out.</p>
-<p>Before ads are introduced, we will update this policy with the actual implementation, advertising partners, and controls available in that release. Advertising settings and permission prompts described as planned are not represented as existing features.</p>
-<h2>Planned analytics and crash reporting</h2>
-<p>Amplitude product analytics and Sentry crash reporting are planned for a future update. Neither is currently integrated into Gameday Pulse. Before enabling them, we will describe the actual events and diagnostic data sent, identifiers, purposes, retention arrangements, and available choices. We do not claim that another app’s SDK settings, data filters, or opt-out controls apply to Gameday Pulse.</p>
-<h2>Retention, deletion, and security</h2>
-<p>Local information remains until removed, replaced, or cleared through available app or device controls. Disconnect controls remove the saved connection they manage. The native ESPN session-clearing flow deletes its saved session and clears the app’s embedded ESPN browser session; it does not sign you out of Safari, Chrome, or your ESPN account elsewhere.</p>
-<p>Secure storage on iOS uses the Keychain and may survive uninstalling the app. Do not rely on uninstalling alone to remove every credential. Use the app’s disconnect controls and your provider’s account or session controls where appropriate. Device backups may retain copies separately.</p>
-<p>Removing local data or logs does not delete copies you previously shared, support correspondence, or records held by fantasy providers or other services. We retain correspondence as needed to respond and handle related requests. Provider records and retention are governed by their policies and applicable arrangements. No method of storage or transmission can be guaranteed completely secure.</p>
-<h2>Privacy requests</h2>
-<p>Depending on your location, you may have rights concerning personal information, including access, correction, deletion, restriction, or objection to processing. Email <a href="mailto:chase@sudokuhero.app">chase@sudokuhero.app</a> with requests concerning information held by us. We may need information to locate the relevant records and verify your request. For information controlled by ESPN, Sleeper, or another provider, use that provider’s privacy controls or request channels. You may also contact your local data protection authority.</p>
-<h2>Provider policies and this website</h2>
-<ul>
-<li><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/">ESPN / The Walt Disney Company privacy policy</a></li>
-<li><a href="https://support.sleeper.com/en/articles/5486618-privacy-notice">Sleeper privacy notice</a></li>
-<li><a href="https://policies.google.com/privacy">Google privacy policy</a> and <a href="https://policies.google.com/technologies/partner-sites">Google’s use of information from partner apps</a> (planned advertising)</li>
-<li><a href="https://amplitude.com/privacy">Amplitude privacy notice</a> (planned analytics)</li>
-<li><a href="https://sentry.io/privacy/">Sentry privacy policy</a> (planned crash reporting)</li>
-<li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a> (policy website hosting)</li>
-</ul>
-<p>This policy website is hosted on GitHub Pages. We have not added website analytics or advertising scripts to this page. GitHub may process visitor IP addresses and technical request information to operate and secure hosting. External websites and services have their own privacy practices.</p>
-<h2>Changes</h2>
-<p>We may update this policy as the app or its services change. Updates will appear on this page with a revised date. The planned services above will be described according to their actual implementation when introduced.</p>
-<footer>Gameday Pulse · Privacy and support: <a href="mailto:chase@sudokuhero.app">chase@sudokuhero.app</a></footer>
-</main></body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gameday Pulse — Privacy Policy</title>
+    <meta
+      name="description"
+      content="Gameday Pulse privacy policy: fantasy connections, basic statistics, optional detailed analytics, advertising, purchases and privacy choices."
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          sans-serif;
+        line-height: 1.7;
+        color: #20282b;
+        background: #fafcfb;
+      }
+      body {
+        margin: 0;
+      }
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 52px 24px 72px;
+      }
+      h1 {
+        font-size: clamp(2rem, 5vw, 2.7rem);
+        line-height: 1.15;
+        letter-spacing: -0.035em;
+        margin: 0 0 14px;
+      }
+      h2 {
+        font-size: 1.3rem;
+        line-height: 1.35;
+        margin: 36px 0 10px;
+      }
+      h3 {
+        font-size: 1.06rem;
+        margin: 24px 0 8px;
+      }
+      p {
+        margin: 0 0 16px;
+      }
+      a {
+        color: #08604b;
+        text-underline-offset: 3px;
+        overflow-wrap: anywhere;
+      }
+      a:focus-visible {
+        outline: 3px solid #428773;
+        outline-offset: 4px;
+      }
+      .date {
+        color: #5c6964;
+      }
+      .note {
+        padding: 18px 20px;
+        background: #eaf3ed;
+        border-left: 4px solid #23745a;
+        border-radius: 0 8px 8px 0;
+      }
+      li {
+        margin: 8px 0;
+      }
+      footer {
+        border-top: 1px solid #ccd8d1;
+        margin-top: 38px;
+        padding-top: 20px;
+        color: #5c6964;
+        font-size: 0.93rem;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          color: #e7eee9;
+          background: #111b18;
+        }
+        a {
+          color: #9cdec4;
+        }
+        .date,
+        footer {
+          color: #afc0b6;
+        }
+        .note {
+          background: #1c3027;
+          border-color: #8ad3b5;
+        }
+        footer {
+          border-color: #34473d;
+        }
+      }
+      @media print {
+        main {
+          padding: 0;
+          max-width: none;
+        }
+        :root {
+          color: #000;
+          background: #fff;
+        }
+        .note {
+          background: none;
+        }
+        a {
+          color: inherit;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Gameday Pulse Privacy Policy</h1>
+      <p class="date">Last updated: October 12, 2026</p>
+      <h2>About this policy</h2>
+      <p>
+        This policy describes how Gameday Pulse handles information. “We,” “us,” and “our” mean
+        Chase Friedman, the developer of Gameday Pulse. For support or privacy requests, contact
+        <a href="mailto:chase@sudokuhero.app">chase@sudokuhero.app</a>.
+      </p>
+      <p class="note">
+        <strong>Release-specific features:</strong> This policy includes the iOS release introducing
+        Google AdMob banner ads, basic aggregate statistics, optional detailed Amplitude analytics
+        and the Remove Ads purchase. Older installed versions may not include these features. Basic
+        statistics defaults on with a notice and an off switch; detailed analytics begins only after
+        you allow it. Existing choices to turn all analytics off are respected. Yahoo integration
+        remains unreleased, and Sentry crash reporting is not integrated.
+      </p>
+      <h2>Fantasy leagues and provider connections</h2>
+      <p>
+        Gameday Pulse processes fantasy-league information such as league and team identifiers, team
+        names, rosters, matchups, standings, player statistics, scores, and available projections.
+        It uses this information to display your selected leagues, follow matchups, and generate
+        scoring updates and animations. You do not need a separate Gameday Pulse account. The
+        built-in sample league uses simulated data and can be explored without connecting a personal
+        fantasy account.
+      </p>
+      <h3>ESPN</h3>
+      <p>
+        When you sign in through the app’s embedded browser, your password is entered on ESPN’s
+        website. The app reads the ESPN session cookies needed to access private leagues, including
+        SWID and espn_s2, and saves connection information using secure storage on native devices.
+        Private ESPN score requests are made directly from the native app to ESPN. The embedded
+        sign-in browser also maintains its own session storage. Public leagues can be accessed
+        without a private-league sign-in.
+      </p>
+      <h3>Sleeper and public sports data</h3>
+      <p>
+        Sleeper connections use a league identifier, league link, or public username lookup. They do
+        not require a Sleeper password. League and player information is requested from Sleeper’s
+        public services. Public ESPN services also supply NFL game context and related information.
+        Providers may receive technical request information, including your IP address, when the app
+        or embedded browser connects to them. Their own privacy policies apply to information they
+        collect.
+      </p>
+      <h3>Optional browser-preview helper</h3>
+      <p>
+        The optional computer helper for browser previews reads ESPN data on the computer running it
+        and sends league information to paired viewers. Private ESPN session values are used by that
+        helper rather than sent to viewers. This helper is separate from the native phone
+        connection. Its form-entered sessions are held in memory and are cleared when the helper
+        restarts; manually configured credentials are controlled by the person running the helper.
+      </p>
+      <h2>Information stored on your device</h2>
+      <p>
+        The app stores league selections, team and watch preferences, local scoring and notification
+        history, read receipts, and replay-related state on your device. Native connection
+        credentials use secure device storage. Browser previews use browser storage, with connection
+        credentials held in session storage. The operating system may include some app data in
+        backups according to your settings.
+      </p>
+      <h2>Diagnostics and support</h2>
+      <p>
+        The optional live-test log records technical timing and error information, scoring changes,
+        player names, roster membership, and animation events. It is stored locally and can persist
+        when you reopen the app. Recording this log does not automatically upload it. If you choose
+        to share a log, the recipient receives the exported information. These logs are not
+        described as anonymous.
+      </p>
+      <p>
+        If you email us or send a diagnostic report, we receive your email address and the
+        information you choose to provide. We use correspondence to respond, troubleshoot, and
+        handle privacy requests. Email is processed by the services used to send and receive it.
+        Please do not send passwords, provider session cookies, or connection tokens.
+      </p>
+      <h2>Planned Yahoo integration</h2>
+      <p>
+        Yahoo integration is not yet released. Its planned design uses Yahoo sign-in and a
+        Cloudflare-hosted service to obtain read-only fantasy access, handle authorization tokens,
+        and retrieve league information. Before introducing it, we will update this policy to
+        describe the actual data processed, server storage and retention, disconnect behavior, and
+        provider choices. No Yahoo functionality or current Yahoo collection is implied by this
+        notice.
+      </p>
+      <h2>Advertising and advertising choices</h2>
+      <p>
+        The iOS release with advertising displays Google AdMob banners at the top of app screens
+        unless an active Remove Ads purchase is recognized. Google and its advertising partners may
+        process IP addresses indicating approximate location, device and app identifiers (including
+        advertising identifiers when permitted), ad interactions, diagnostics and performance
+        information, and consent choices for ad delivery, measurement and fraud prevention. We do
+        not provide your fantasy league details or provider credentials to AdMob.
+      </p>
+      <p>
+        We use Google’s User Messaging Platform to request applicable advertising choices before
+        requesting ads. On iOS and iPadOS, Apple’s App Tracking Transparency permission is separate
+        from those regional choices. Permission through one mechanism does not override choices
+        through the other. Personalized ads depend on the applicable permissions and consent. Where
+        Google requires a privacy-options entry point, Settings includes “Advertising privacy
+        choices.” Apple’s tracking permission can be changed in your device Settings.
+      </p>
+      <p>
+        Declining tracking does not necessarily eliminate all advertising processing.
+        Non-personalized or limited ads can still involve data collection and device storage for
+        delivery, frequency limits, reporting and fraud prevention. Depending on your choices and
+        Google’s eligibility determination, the app requests non-personalized or limited ads,
+        personalized ads where permitted, or no ads. Advertising choices and usage analytics consent
+        are separate.
+      </p>
+      <h2>Remove Ads purchase</h2>
+      <p>
+        Remove Ads is a one-time, non-consumable purchase processed by Apple. The app checks App
+        Store purchase and entitlement information to grant or restore ad removal and respond to
+        refunds or revocations, and caches ownership status on your device. We do not receive your
+        payment card details. Restore purchases is available in Settings. Removing ads prevents
+        future banner requests while the entitlement is recognized; it does not delete data
+        previously processed by Google or change your optional analytics choice.
+      </p>
+      <h2>Basic usage statistics and your right to object</h2>
+      <p>
+        In the release with basic statistics, this feature is on by default for new installations. A
+        prominent notice explains it before collection starts. You can turn it off in that notice or
+        at any time using “Basic usage statistics” in Settings &gt; Privacy, free of charge and
+        without losing any app features. Privacy is at the bottom of Settings and starts collapsed;
+        tap its heading to open the section and view the controls. If you previously turned all analytics off, basic
+        statistics remains off unless you change that choice. Detailed analytics and advertising
+        choices are separate. Basic collection remains disabled in builds where the aggregation
+        service is not configured.
+      </p>
+      <p>
+        Basic statistics is used solely to understand and improve the app: broad screen visits,
+        whole minutes spent on generic screens, sample-league and player-stat screen opens, game
+        selection and sample replay-control counts, and fixed technical error counts. It excludes
+        purchase and advertising data, notification activity, fantasy details, installation or
+        session identifiers, provider names, app/device metadata, and individual event histories.
+      </p>
+      <p>
+        The app combines these actions into integer counters in memory. It sends only those counters
+        to our Cloudflare-hosted aggregation service, which immediately adds them into app-wide
+        daily totals. The service does not store individual submissions or client IP addresses, and
+        application request logging is disabled. Cloudflare still processes network information,
+        including IP addresses, to deliver and protect its service. Client IP addresses and request
+        headers are not forwarded to Amplitude. No installation identifier is created or sent by
+        this basic path.
+      </p>
+      <p>
+        Amplitude receives only daily totals using a constant identifier for the combined dataset,
+        never a person or device. Small counter totals with fewer than 20 contributing reports are
+        omitted; this is a report threshold, not a count of distinct people. We do not join these
+        totals to detailed analytics, create individual profiles, make decisions about individuals,
+        or use them for advertising. Counts are approximate and do not measure unique users.
+      </p>
+      <p>
+        We rely on the UK statistical-purposes exception for this limited service-improvement use.
+        Where transient processing involves personal data, our intended lawful basis is our
+        legitimate interest in improving app usability and reliability, balanced against your
+        privacy through minimization, immediate aggregation and the right to object. Turning basic
+        statistics off clears unsent counters, stops further collection and cancels outstanding
+        requests where possible. Already combined totals cannot be located or deleted by person. We
+        keep your choice and a local upload budget on the device, but do not persist a basic
+        activity history. Pending aggregate buckets are removed after export or within three days;
+        platform backups may retain aggregate snapshots under Cloudflare’s retention arrangements.
+        Amplitude retains combined statistics under our service arrangements. Cloudflare and
+        Amplitude may process information outside your country; their privacy notices describe
+        international processing and safeguards.
+      </p>
+      <h2>Optional detailed Amplitude analytics</h2>
+      <p>
+        Detailed analytics is off until you choose “Allow detailed analytics.” You can decline and
+        use the app, or change “Share detailed analytics” in Settings &gt; Privacy at any time. We
+        use Amplitude to understand app usage, improve features and reliability, and measure
+        ad-removal purchases. This choice is separate from advertising consent and Apple’s tracking
+        permission.
+      </p>
+      <p>
+        If you opt in, we send a randomly generated installation ID, session identifiers and
+        timestamps; app version and build, iOS version and phone/tablet category; generic screen
+        visits and active time; sample-league use; provider connection attempts and outcomes; league
+        switches and disconnects; matchup pinning and player-stat screen opens; game selection
+        counts and sample replay controls; selected animation, character-style, haptic and
+        keep-awake settings; ad-removal offer views, purchase attempts and outcomes, product,
+        offered price and currency where available, and restore outcomes; aggregated banner
+        impression, click and load-failure counts; and a small set of fixed technical error
+        categories. Restores are not recorded as new purchases.
+      </p>
+      <p>
+        Analytics does not include names, email addresses, fantasy account, league, team, player or
+        game identifiers, rosters, scores, provider credentials, cookies, purchase receipts, payment
+        details, typed text, raw error messages, precise location, accessibility settings or
+        notification activity. We do not use Amplitude session recordings, screenshots, automatic
+        interaction capture, advertising IDs or Apple’s vendor ID. The installation ID is
+        pseudonymous, not a promise of complete anonymity. It is not shared with advertising
+        providers or used to link activity across our apps.
+      </p>
+      <p>
+        We send only explicitly selected events to Amplitude’s US ingestion service. IP addresses
+        and location fields are omitted from analytics event payloads, and we do not request
+        IP-based location enrichment. As with other internet services, Amplitude’s infrastructure
+        receives network information such as the originating IP address when handling a connection.
+        Amplitude may process data outside your country, including in the United States; its privacy
+        notice describes its processing and international-transfer safeguards.
+      </p>
+      <p>
+        Turning detailed analytics off stops new detailed collection, discards unsent detailed
+        events and cancels outstanding uploads where possible. A request already received by
+        Amplitude cannot be recalled. Unsent events are held only in memory, in a bounded queue, and
+        expire after five minutes; closing the app can discard them sooner. We retain your choice
+        and random ID locally so the preference survives restarting the app and you can identify
+        previously sent data in a privacy request. The basic-statistics switch is separate. Turning
+        detailed analytics off or uninstalling the app does not automatically delete previously
+        uploaded records. To request access or deletion, email us and include the analytics ID shown
+        in Settings &gt; Privacy before clearing app data. Amplitude records are retained under our
+        service arrangements until deleted or expired; we use them only for the purposes described
+        here. No Sentry crash-reporting integration is included.
+      </p>
+      <h2>Retention, deletion, and security</h2>
+      <p>
+        Local information remains until removed, replaced, or cleared through available app or
+        device controls. Disconnect controls remove the saved connection they manage. The native
+        ESPN session-clearing flow deletes its saved session and clears the app’s embedded ESPN
+        browser session; it does not sign you out of Safari, Chrome, or your ESPN account elsewhere.
+      </p>
+      <p>
+        Secure storage on iOS uses the Keychain and may survive uninstalling the app. Do not rely on
+        uninstalling alone to remove every credential. Use the app’s disconnect controls and your
+        provider’s account or session controls where appropriate. Device backups may retain copies
+        separately.
+      </p>
+      <p>
+        Removing local data or logs does not delete copies you previously shared, support
+        correspondence, or records held by fantasy providers or other services. We retain
+        correspondence as needed to respond and handle related requests. Provider records and
+        retention are governed by their policies and applicable arrangements. No method of storage
+        or transmission can be guaranteed completely secure.
+      </p>
+      <h2>Privacy requests</h2>
+      <p>
+        Depending on your location, you may have rights concerning personal information, including
+        access, correction, deletion, restriction, or objection to processing. Email
+        <a href="mailto:chase@sudokuhero.app">chase@sudokuhero.app</a> with requests concerning
+        information held by us. We may need information to locate the relevant records and verify
+        your request. For information controlled by ESPN, Sleeper, or another provider, use that
+        provider’s privacy controls or request channels. You may also contact your local data
+        protection authority.
+      </p>
+      <h2>Provider policies and this website</h2>
+      <ul>
+        <li>
+          <a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/"
+            >ESPN / The Walt Disney Company privacy policy</a
+          >
+        </li>
+        <li>
+          <a href="https://support.sleeper.com/en/articles/5486618-privacy-notice"
+            >Sleeper privacy notice</a
+          >
+        </li>
+        <li>
+          <a href="https://policies.google.com/privacy">Google privacy policy</a> and
+          <a href="https://policies.google.com/technologies/partner-sites"
+            >Google’s use of information from partner apps</a
+          >
+          (advertising)
+        </li>
+        <li>
+          <a href="https://www.apple.com/legal/privacy/">Apple privacy policy</a> (App Store
+          purchases)
+        </li>
+        <li>
+          <a href="https://amplitude.com/privacy">Amplitude privacy notice</a> (combined basic
+          statistics and optional detailed analytics)
+        </li>
+        <li>
+          <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare privacy policy</a>
+          (basic-statistics aggregation service)
+        </li>
+        <li>
+          <a href="https://sentry.io/privacy/">Sentry privacy policy</a> (planned crash reporting)
+        </li>
+        <li>
+          <a
+            href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+            >GitHub privacy statement</a
+          >
+          (policy website hosting)
+        </li>
+      </ul>
+      <p>
+        This policy website is hosted on GitHub Pages. We have not added website analytics or
+        advertising scripts to this page. GitHub may process visitor IP addresses and technical
+        request information to operate and secure hosting. External websites and services have their
+        own privacy practices.
+      </p>
+      <h2>Changes</h2>
+      <p>
+        We may update this policy as the app or its services change. Updates will appear on this
+        page with a revised date. The planned services above will be described according to their
+        actual implementation when introduced.
+      </p>
+      <footer>
+        Gameday Pulse · Privacy and support:
+        <a href="mailto:chase@sudokuhero.app">chase@sudokuhero.app</a>
+      </footer>
+    </main>
+  </body>
 </html>
